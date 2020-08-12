@@ -226,6 +226,18 @@
         </div>
     </div>
 
+    <!-- intercom Chatbot -->
+    <script>
+        //---------------- for chatbot --------------------------
+        window.intercomSettings = {
+            app_id: "d8y0r6na",
+            webURL: window.location.hostname
+        };
+
+        (function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('shutdown'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/b4jd3a54'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { document.cookie = "intercom-id-" + intercomSettings.app_id + "=;path=/;domain=.github.com;"; w.addEventListener('load', l, false); } } })()
+        //---------------- for chatbot --------------------------
+    </script>
+    <!-- intercom Chatbot -->
 
 
 
